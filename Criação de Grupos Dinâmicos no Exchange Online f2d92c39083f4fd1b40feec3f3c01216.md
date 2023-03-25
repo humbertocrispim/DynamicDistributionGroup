@@ -1,9 +1,15 @@
-# Criação de Grupos Dinâmicos no Exchange Online
 
-Created By: humberto cunha
-Last Edited By: humberto cunha
-Status: Completed 🏁
-Type: Technical Spec
+
+<p align="center">
+  <strong>
+    Criação de
+    <a href="https://learn.microsoft.com/en-us/powershell/module/exchange/new-distributiongroup?view=exchange-ps">Grupos Dinâmicos </a> 
+    no Exchange Online
+    
+  </strong>
+</p>
+
+#
 
 # **Criação de Grupos Dinâmicos no Exchange Online**
 
@@ -59,8 +65,11 @@ New-DynamicDistributionGroup -Name "GrupoDeExemplo" -RecipientFilter {(Recipient
 ```
 
 Este exemplo cria um novo grupo de distribuição dinâmico chamado "GrupoDeExemplo" e filtra os destinatários com base em sua propriedade “userPrincipalName” igual a "UserMailbox" e seu título começando com a palavra "Grupo".
-
 Os membros do grupo serão atualizados automaticamente com base nesses critérios.
+
+
+
+
 
 - Documentação do Microsoft Exchange Online: **[https://docs.microsoft.com/en-us/exchange/](https://docs.microsoft.com/en-us/exchange/)**
 - Documentação do Microsoft PowerShell para Exchange Online: **[https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell?view=exchange-ps](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell?view=exchange-ps)**
