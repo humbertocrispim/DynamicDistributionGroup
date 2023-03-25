@@ -47,7 +47,7 @@ Get-User -Filter "userPrincipalName -like '*exeplo.com.br'"
 Este comando retorna todos os usuários que possuem o atributo **`userPrincipalName`**
  igual a **`exemplo.com.br`**.
 
-3. Use o filtro acima para criar o grupo dinâmico:
+3. Use o comando abaixo criar o grupo dinâmico:
 
 ```powershell
 New-DynamicDistributionGroup -Name "<NomeDoGrupo>" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (userPrincipalName -like '<NomeDoDominio>')}
