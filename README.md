@@ -13,7 +13,8 @@
 
 # **Criação de Grupos Dinâmicos no Exchange Online**
 
-Recentemente, precisei criar uma lista de distribuição dinâmica no Exchange Online no trabalho. Pensei que seria fácil fazê-lo por meio do painel de administração da Microsoft, mas percebi que o EAC não era tão intuitivo assim. Após algumas pesquisas, encontrei uma documentação no site da Microsoft que explicava praticamente o que eu gostaria de fazer: criar uma lista de distribuição que utilizasse um filtro de domínio.
+Recentemente, precisei criar uma lista de distribuição dinâmica no Exchange Online, pensei que seria fácil fazê-lo por meio do painel de administração da Microsoft, mas percebi que o EAC não era tão intuitivo assim.
+Após algumas pesquisas, encontrei uma documentação no site da Microsoft que explicava praticamente o que eu gostaria de fazer, criar uma lista de distribuição que utilizasse um filtro de domínio.
 
 Exemplo: todo e qualquer colaborador que tivesse o domínio de e-mail @exemplo.com.br iria ser membro desta lista.
 
