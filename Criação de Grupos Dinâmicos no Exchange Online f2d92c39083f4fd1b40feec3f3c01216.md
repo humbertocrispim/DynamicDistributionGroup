@@ -58,6 +58,16 @@ New-DynamicDistributionGroup -Name "<NomeDoGrupo>" -RecipientFilter {(RecipientT
 New-DynamicDistributionGroup -Name "GrupoDeExemplo" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (userPrincipalName -like '*exemplo.com.br')}
 ```
 
+
+Documentação do Microsoft Exchange Online: https://docs.microsoft.com/en-us/exchange/
+Documentação do Microsoft PowerShell para Exchange Online: https://docs.microsoft.com/en-us/powershell/exchange/exchange-online-powershell?view=exchange-ps
+Artigo sobre permissões de recurso em Exchange Online: https://docs.microsoft.com/en-us/exchange/permissions-exo/feature-permissions
+Documentação sobre o cmdlet New-DynamicDistributionGroup: https://docs.microsoft.com/en-us/powershell/module/exchange/new-dynamicdistributiongroup?view=exchange-ps
+Documentação sobre o cmdlet Get-User: https://docs.microsoft.com/en-us/powershell/module/exchange/get-user?view=exchange-ps
+
+
+
+
 Este exemplo cria um novo grupo de distribuição dinâmico chamado "GrupoDeExemplo" e filtra os destinatários com base em sua propriedade “userPrincipalName” igual a "UserMailbox" e seu título começando com a palavra "Grupo".
 
 Os membros do grupo serão atualizados automaticamente com base nesses critérios.
