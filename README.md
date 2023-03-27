@@ -34,7 +34,7 @@ Será exibido um pop-up para você fazer login com suas credenciais.
 Get-User -Filter "userPrincipalName -like '*exeplo.com.br'"
 ```
 
-Este comando retorna todos os usuários que possuem o atributo **`userPrincipalName`**
+Este comando retorna todos os usuários que possuem o atributo **`userPrincipalName`**, voce pode usar outros atributos, consulte os atributos na documentação da MS
  igual a **`exemplo.com.br`**.
 
 3. Use o comando abaixo criar o grupo dinâmico:
