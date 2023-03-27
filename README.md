@@ -1,16 +1,5 @@
 
 
-<p align="center">
-  <strong>
-    Criação de
-    <a href="https://learn.microsoft.com/en-us/powershell/module/exchange/new-distributiongroup?view=exchange-ps">Grupos Dinâmicos </a> 
-    no Exchange Online
-    
-  </strong>
-</p>
-
-#
-
 # **Criação de Grupos Dinâmicos no Exchange Online**
 
 Recentemente, precisei criar uma lista de distribuição dinâmica no Exchange Online, pensei que seria fácil fazê-lo por meio do painel de administração da Microsoft, mas percebi que o EAC não era tão intuitivo assim.
