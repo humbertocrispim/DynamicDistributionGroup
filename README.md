@@ -31,7 +31,7 @@ Será exibido um pop-up para você fazer login com suas credenciais.
 2. Use o comando **[Get-User](https://learn.microsoft.com/pt-br/powershell/module/exchange/get-user?view=exchange-ps)** para filtrar os usuários:
 
 ```powershell
-Get-User -Filter "userPrincipalName -like '*exeplo.com.br'"
+Get-User -Filter "company -like '*exemplocompany'"
 ```
 
 Este comando retorna todos os usuários que possuem o atributo **`userPrincipalName`**, voce pode usar outros atributos, consulte os atributos na documentação da MS
@@ -40,7 +40,7 @@ Este comando retorna todos os usuários que possuem o atributo **`userPrincipalN
 3. Use o comando abaixo criar o grupo dinâmico:
 
 ```powershell
-New-DynamicDistributionGroup -Name "<NomeDoGrupo>" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (userPrincipalName -like '<NomeDoDominio>')}
+New-DynamicDistributionGroup -Name "<NomeDoGrupo>" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (company -like '<NomeDoDominio>')}
 ```
 
 ### **Parâmetros**
@@ -51,7 +51,7 @@ New-DynamicDistributionGroup -Name "<NomeDoGrupo>" -RecipientFilter {(RecipientT
 ### **Exemplo**
 
 ```powershell
-New-DynamicDistributionGroup -Name "GrupoDeExemplo" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (userPrincipalName -like '*exemplo.com.br')}
+New-DynamicDistributionGroup -Name "GrupoDeExemplo" -RecipientFilter {(RecipientType -eq 'UserMailbox') -and (company -like '*exemplo.com.br')}
 ```
 
 
